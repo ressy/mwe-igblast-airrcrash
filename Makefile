@@ -33,7 +33,7 @@ demo_fmt_7_alt: $(VDJ) $(IGBLASTN)
 	$(IGBLASTN) -germline_db_V database/stub_HV.fasta -germline_db_D database/stub_HD.fasta -germline_db_J database/stub_HJ.fasta -query works.fasta -outfmt 19
 
 %.fasta.nhr: %.fasta $(IGBLASTN)
-	$(MAKEBLASTDB) -dbtype nucl -in $<
+	$(MAKEBLASTDB) -dbtype nucl -parse_seqids -in $<
 
 clean:
 	rm -f database/stub_H{V,D,J}.fasta.{ndb,nhr,nin,not,nsq,ntf,nto}
