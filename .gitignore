@@ -1,0 +1,4 @@
+ncbi-igblast-*/
+ncbi-igblast*.tar.gz
+database/*.fasta.n*
+internal_data
