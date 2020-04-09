@@ -11,3 +11,5 @@ Relevant lines from `make`:
     WORKER: T5 BATCH # 1 EXCEPTION: basic_string::substr: __pos (which is 30) > this->size() (which is 9)
     Makefile:21: recipe for target 'demo_fmt_19' failed
     make: *** [demo_fmt_19] Segmentation fault (core dumped)
+
+**Answer: I need `-parse_seqids` when running makeblastdb.** (Thanks NLM Support.)
